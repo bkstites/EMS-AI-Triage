@@ -217,3 +217,4 @@ For questions or support, please open an issue in the repository or contact the 
 ---
 
 **Note**: This system is designed to assist EMS professionals but should not replace clinical judgment. Always follow local protocols and guidelines. # EMS AI Triage System - Deployed on Render
+# Updated for Python 3.13.4

@@ -1,13 +1,15 @@
-# Railway Deployment Configuration
-# This file tells Railway how to deploy our FastAPI app
-
-services:
-  - type: web
-    name: ems-ai-triage-api
-    env: python
-    buildCommand: pip install -r requirements_fastapi.txt
-    startCommand: uvicorn fastapi_app:app --host 0.0.0.0 --port $PORT
-    healthcheckPath: /health
-    healthcheckTimeout: 300
-    restartPolicyType: on_failure
-    restartPolicyMaxRetries: 10
+{
+  "services": [
+    {
+      "type": "web",
+      "name": "ems-ai-triage-api",
+      "env": "python",
+      "buildCommand": "pip install -r requirements_fastapi.txt",
+      "startCommand": "uvicorn fastapi_app:app --host 0.0.0.0 --port $PORT",
+      "healthcheckPath": "/health",
+      "healthcheckTimeout": 300,
+      "restartPolicyType": "on_failure",
+      "restartPolicyMaxRetries": 10
+    }
+  ]
+}

@@ -1,7 +1,7 @@
-# FastAPI Backend Requirements - Modern Python 3.13 Compatible
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-pydantic==2.5.0
+# FastAPI Backend Requirements - Python 3.13 Compatible
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.6.0
 
 # EMS AI Triage System Dependencies
 pandas>=1.5.0

@@ -1,6 +1,6 @@
-# FastAPI Backend Requirements - Pure Python Version
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
+# FastAPI Backend Requirements - Railway Compatible
+fastapi==0.88.0
+uvicorn[standard]==0.20.0
 pydantic==1.10.13
 
 # EMS AI Triage System Dependencies
